@@ -1,0 +1,345 @@
+.landing-con {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 15rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.landing-img {
+  width: 50%;
+  height: 55vh;
+  position: relative;
+  background-image: url(../img/book-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (max-width: 1024px) {
+    height: 45vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    background-size: contain;
+    height: 35vh;
+  }
+}
+
+.landing-content {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12rem;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 15rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+}
+
+.landing-info {
+  text-align: left;
+
+  @media (max-width: 768px) {
+    margin-top: 5rem;
+  }
+}
+
+.landing-content h3 {
+  margin: 2rem 0;
+}
+
+.paypal-btn {
+  z-index: 1;
+  margin: 2rem 0;
+}
+
+.socials1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(49, 56, 56);
+  position: fixed;
+  top: 15rem;
+  z-index: 5;
+  right: 0;
+}
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(49, 56, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  border-bottom: 0.01rem solid white;
+  transition: 0.4s ease;
+  z-index: 99;
+  color: white;
+}
+
+.icon:hover {
+  background-color: rgb(74, 85, 85);
+}
+
+.quote {
+  position: relative;
+  display: block;
+  font-family: 'Montagu Slab', serif;
+  margin: 10rem 0;
+  padding: 5rem;
+  background-color: whitesmoke;
+  font-size: 6rem;
+
+  @media (max-width: 600px) {
+    padding: 4rem;
+    font-size: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 5rem;
+    font-size: 5rem;
+  }
+}
+
+.illust {
+  width: 100%;
+  height: 55vh;
+  margin-bottom: 10rem;
+  position: relative;
+  display: block;
+  background-image: url(../img/ill.jpg);
+  background-position-y: -20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 1024px) {
+    height: 40vh;
+    background-position-y: -13rem;
+  }
+
+  @media (max-width: 768px) {
+    height: 43vh;
+    background-position-y: 0rem;
+  }
+}
+
+.affi-con {
+  margin: 0 20rem;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    margin: 1.5rem 3rem;
+  }
+}
+
+.affi-box {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.affi-img-1,
+.affi-img-2 {
+  width: 50%;
+  position: relative;
+  display: block;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.affi-img-1 {
+  background-image: url(../img/aff2.jpg);
+}
+.affi-img-2 {
+  background-image: url(../img/affir.card.jpg);
+}
+
+.affi-headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-grey);
+}
+
+.affi-sub {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about {
+  padding: 0;
+  margin: 0 15rem;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  @media (max-width: 1366px) {
+    margin: 0 7rem;
+    margin-bottom: 7rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    margin: 5rem 3rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 8.5rem 3rem;
+  }
+}
+
+.about-card {
+  width: 100%;
+
+  @media (min-width: 900px) {
+    display: flex;
+  }
+}
+
+.about-name {
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.about-content {
+  padding: 3rem;
+  background-color: var(--about-section);
+  width: 70%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+#read-more-btn {
+  font-size: 12px;
+  font-weight: 500;
+  border: solid 0.01rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+
+.more {
+  font-size: 1.4rem;
+}
+
+.at {
+  font-weight: 600;
+}
+
+.more-text {
+  display: none;
+}
+.show-more {
+  display: inline;
+}
+
+.uil-angle-up {
+  transform: rotate(180deg);
+}
+
+.about-img {
+  position: relative;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/tina-22.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -3rem;
+  background-size: cover;
+
+  @media (max-width: 900px) {
+    height: 70vh;
+    width: 100%;
+    background-position-y: center;
+  }
+}
+
+.about-info {
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (min-width: 900px) {
+    padding: 1rem 1rem;
+  }
+}
+
+.link-headline {
+  width: fit-content;
+  display: flex;
+  padding: 0.3rem 1rem;
+  border: white solid 0.02rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.4rem;
+  align-items: center;
+  margin: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1px 1px #493e3b6b;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+.sponsor-con {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sponsor-icon {
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+  object-position: center;
+  margin: 0.5rem;
+
+  @media (max-width: 4768px) {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 7rem;
+    height: 7rem;
+  }
+}
