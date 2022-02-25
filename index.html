@@ -41,10 +41,10 @@
               <h1>Teach Me How To Be Happy</h1>
               <br><br>
             <em>Tina Pokuaah 2022</em>
-            <h1>£11.00</h1>
+            <h1>£10.99</h1>
             <h3> Pre-order Now</h3>
               <div class="paypal-btn">
-                <div id="smart-button-container">
+                 <div id="smart-button-container">
                   <div style="text-align: center;">
                     <div id="paypal-button-container"></div>
                   </div>
@@ -53,13 +53,15 @@
         </div>
     </section>
 
+  
 
           <section class="landing-info">
-               <p>As we go through this journey called life we learn through education and experience. Evidently our relationships are no different. Through the in-depth conversations held with hundreds of survivors and perpetrators of abuse, a common theme which often came up was their lack of understanding on what constitutes a healthy relationship. Most openly admitted to have never been taught nor witnessed what a healthy relationship looked like whilst growing up. As a result many have found themselves going from one relationship to the next which mirrored the same toxic traits and patterns.
+               <p>As we go through this journey called life we learn through education and experience. Evidently our relationships are no different. Through the in-depth conversations held with hundreds of survivors and perpetrators of abuse, a common theme which often came up was their lack of understanding on what constitutes a healthy relationship. <br><br> Most openly admitted to have never been taught nor witnessed what a healthy relationship looked like whilst growing up. As a result many have found themselves going from one relationship to the next which mirrored the same toxic traits and patterns.
               <br><br>
               “Teach me how to be happy” is a raw and enlightening journal which seeks to be an empowering resource; preventing the continuous manifestation of unhealthy relationships. Packed with practical techniques and encouraging affirmations;readers will be able to better identify, challenge and heal from unhealthy relationships. 
               <br><br>
-              You deserve better, you CAN do better and you WILL do better!</p>
+              
+             <b>You deserve better, you CAN do better and you WILL do better!</b>
         </section>
 
         <section>
@@ -218,7 +220,7 @@
   
           createOrder: function(data, actions) {
             return actions.order.create({
-              purchase_units: [{"description":"An interactive journal helping you to identify, challenge and heal from unhealthy relationships.","amount":{"currency_code":"GBP","value":14.99,"breakdown":{"item_total":{"currency_code":"GBP","value":11},"shipping":{"currency_code":"GBP","value":3.99},"tax_total":{"currency_code":"GBP","value":0}}}}]
+              purchase_units: [{"description":"An interactive journal helping you to identify, challenge and heal from unhealthy relationships.","amount":{"currency_code":"GBP","value":12.98,"breakdown":{"item_total":{"currency_code":"GBP","value":10.99},"shipping":{"currency_code":"GBP","value":1.99},"tax_total":{"currency_code":"GBP","value":0}}}}]
             });
           },
   
@@ -245,6 +247,47 @@
       }
       initPayPalButton();
     </script>
+
+    <!-- <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'blue',
+            layout: 'vertical',
+            label: 'buynow',
+            
+          },
+  
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"description":"An interactive journal helping you to identify, challenge and heal from unhealthy relationships.","amount":{"currency_code":"GBP","value":14.99,"breakdown":{"item_total":{"currency_code":"GBP","value":11},"shipping":{"currency_code":"GBP","value":3.99},"tax_total":{"currency_code":"GBP","value":0}}}}]
+            });
+          },
+  
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+              
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+  
+              // Show a success message within this page, e.g.
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+  
+              // Or go to another URL:  actions.redirect('thank_you.html');
+              
+            });
+          },
+  
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script> -->
 
        
       
