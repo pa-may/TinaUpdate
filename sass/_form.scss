@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 4rem 2rem;
+  padding: 5rem 6rem;
   top: 10rem;
   background-color: whitesmoke;
   margin-bottom: 10rem;
@@ -34,7 +34,7 @@
   display: block;
   width: 100%;
   border: #d3d3d3 solid 0.1rem;
-  height: 4rem;
+  height: 4.5rem;
   padding: 1rem;
   font-size: 1.6rem;
   margin: 1rem 0rem;
@@ -48,21 +48,17 @@
   width: 100%;
   position: relative;
   display: block;
-  background-color: rgb(235, 5, 5);
-  padding: 1.5rem;
+  background-color: #ff6a00;
+  padding: 1rem;
   color: white;
   font-weight: 500;
   font-size: 2rem;
   cursor: pointer;
   border-radius: 0.3rem;
-
-  //   @media (max-width: 480px) {
-  //     padding: rem;
-  //   }
 }
 
 .button:hover {
-  background-color: rgb(238, 49, 49);
+  background-color: #d35902;
 }
 
 .email-label {
