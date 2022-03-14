@@ -1,59 +1,150 @@
-.landing-con {
-  position: relative;
-  width: 100%;
+.landing {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  top: 15rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bckg.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: floralwhite;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 4rem 2rem;
+    height: fit-content;
+  }
+
+  &__img {
+    height: 50rem;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 2rem;
+    @media (max-width: 768px) {
+      margin-right: 0rem;
+      padding-top: 8rem;
+    }
+
+    @media (max-width: 375px) {
+      height: 35rem;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-family: 'Prata', serif;
+    font-weight: 900;
+  }
+
+  &__content {
+    width: 40%;
+    font-weight: 400;
+    margin: 1rem 0;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      width: 80%;
+      margin: 0 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+  }
+
+  &__price {
+    font-size: 3rem;
+    margin: 1.5rem 0;
+  }
+
+  &__pre-order {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    color: rgb(36, 153, 168);
+    margin: 1rem 0;
+    width: fit-content;
+    border-radius: 0.5rem;
+    border: rgb(202, 202, 202) solid 0.01rem;
+    font-size: 1.8rem;
+    margin-right: 3rem;
+  }
+  &__tag {
+    font-size: 1.6rem;
+    margin: 1rem 0;
   }
 }
 
-.landing-img {
-  width: 50%;
-  height: 55vh;
-  position: relative;
-  background-image: url(../img/book-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  @media (max-width: 1024px) {
-    height: 45vh;
-  }
-
-  @media (max-width: 768px) {
-    height: 60vh;
-    width: 100%;
-  }
+.pay-p {
+  display: flex;
+  justify-content: flex-start;
 
   @media (max-width: 480px) {
-    background-size: contain;
-    height: 35vh;
+    justify-content: center;
   }
 }
 
-.landing-content {
-  position: relative;
+// em {
+//   margin: 1rem 0;
+//   font-family: 'Poppins', sans-serif;
+//   font-weight: 300;
+//   font-size: 1.2rem;
+// }
+
+.left-col,
+.right-col {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12rem;
-
-  @media (max-width: 1024px) {
-    margin-bottom: 15rem;
-  }
-
   @media (max-width: 768px) {
     width: 100%;
-    margin-bottom: 10rem;
+    margin: 0rem 2rem;
   }
 }
+
+.book-info {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 100;
+  @media (max-width: 768px) {
+    // padding-top: 2rem;
+    // border-top: rgb(212, 212, 212) solid 0.01rem;
+  }
+}
+// .landing-img {
+//   // width: 50%;
+//   // height: 55vh;
+//   position: relative;
+//   background-image: url(../img/book-img.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+
+//   @media (max-width: 1024px) {
+//     height: 45vh;
+//   }
+
+//   @media (max-width: 768px) {
+//     height: 60vh;
+//     width: 100%;
+//   }
+
+//   @media (max-width: 480px) {
+//     background-size: contain;
+//     height: 35vh;
+//   }
+// }
 
 .landing-info {
   text-align: left;
@@ -82,9 +173,16 @@
   right: 0;
 }
 
+.subscribe-section {
+  margin: 5rem 15rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .icon {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   background-color: rgb(49, 56, 56);
   display: flex;
   justify-content: center;
@@ -103,20 +201,44 @@
 .quote {
   position: relative;
   display: block;
-  font-family: 'Montagu Slab', serif;
-  margin: 10rem 0;
-  padding: 5rem;
+  font-family: 'Prata', serif;
+  font-weight: 900;
+  padding: 3rem;
+  margin-top: 3rem;
   background-color: whitesmoke;
-  font-size: 6rem;
+  font-size: 3rem;
 
   @media (max-width: 600px) {
-    padding: 4rem;
-    font-size: 4rem;
+    padding: 2rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.main-area {
+  display: flex;
+  padding: 4rem 15rem;
+  justify-content: space-around;
+
+  @media (max-width: 1024px) {
+    padding: 4rem 8rem;
   }
 
-  @media (max-width: 480px) {
-    padding: 5rem;
-    font-size: 5rem;
+  @media (max-width: 900px) {
+    padding: 4rem 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem;
+    position: relative;
+    margin-bottom: 3rem;
+    border-top: rgb(212, 212, 212) solid 0.01rem;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
   }
 }
 
@@ -181,6 +303,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark-grey);
+  margin-bottom: 2rem;
 }
 
 .affi-sub {
@@ -190,13 +313,16 @@
 
 .about {
   padding: 0;
-  margin: 0 15rem;
+  margin: 5rem 25rem;
   overflow: hidden;
-  border-radius: 1rem;
+  border: black solid 0.01rem;
 
-  @media (max-width: 1366px) {
-    margin: 0 7rem;
-    margin-bottom: 7rem;
+  @media (max-width: 1024px) {
+    margin: 0 8rem;
+  }
+
+  @media (max-width: 900px) {
+    margin: 0 4rem;
   }
 
   @media (max-width: 768px) {
@@ -204,33 +330,50 @@
   }
 
   @media (max-width: 600px) {
-    margin: 5rem 3rem;
+    margin: 5rem 2rem;
   }
 
   @media (max-width: 480px) {
-    margin: 8.5rem 3rem;
+    margin: 2rem;
   }
 }
 
 .about-card {
   width: 100%;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: 900px) {
     display: flex;
   }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .about-name {
-  color: white;
-  font-weight: 100;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
   text-align: center;
+  color: white;
 }
-.about-content {
-  padding: 3rem;
-  background-color: var(--about-section);
-  width: 70%;
 
+.about-title {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  font-weight: 200;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+.about-content {
+  padding: 2rem;
+  width: 100%;
   @media (max-width: 900px) {
     width: 100%;
   }
@@ -270,7 +413,7 @@
 
 .about-img {
   position: relative;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -280,22 +423,29 @@
   background-position-y: -3rem;
   background-size: cover;
 
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
   @media (max-width: 900px) {
-    height: 70vh;
     width: 100%;
-    background-position-y: center;
+  }
+
+  @media (max-width: 480px) {
+    height: 60rem;
   }
 }
 
 .about-info {
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  background-color: black;
 
-  @media (min-width: 900px) {
+  @media (max-width: 900px) {
     padding: 1rem 1rem;
   }
 }

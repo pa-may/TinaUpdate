@@ -1,15 +1,15 @@
-.testicon {
-  @media (max-width: 768px) {
-    margin: 0 3rem;
-  }
-  @media (max-width: 480px) {
-    margin: 0 1rem;
-  }
-}
+// .testicon {
+//   @media (max-width: 768px) {
+//     margin: 0 15rem;
+//   }
+//   @media (max-width: 480px) {
+//     margin: 0 1rem;
+//   }
+// }
 
 .swiper {
   width: 100%;
-  height: 45rem;
+  height: fit-content;
   margin-bottom: 5rem;
   background-image: url(../img/1200px-Quotation_Marks.svg.png);
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  padding: 5rem 10rem;
+  padding: 0rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -44,10 +44,39 @@
   }
 }
 
+.testicon {
+  margin: 10rem 35rem;
+  text-align: center;
+
+  @media (max-width: 1024px) {
+    margin: 10rem 20rem;
+  }
+
+  @media (max-width: 900px) {
+    margin: 8rem 15rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0 10rem;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0 5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0rem;
+  }
+}
+
 .testi-content {
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 0 5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 
 .testi-name {
