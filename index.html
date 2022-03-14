@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.paypal.com/sdk/js?client-id=AUFTaKjxaR61tNLdCQ_bqU1_dnUCx407Z6pRoO8vdjTeFyq3SYS5xVgyaZxigmD5WUxjhwZ69K8-4DeV&enable-funding=venmo&currency=GBP" data-sdk-integration-source="button-factory"></script>
     <link
       rel="stylesheet"
@@ -58,7 +60,7 @@
   
 
           <main class="main-area" >
-            <div class="left-col">
+            <div data-aos="fade-right" data-aos-duration="1000" class="left-col">
               <p class="book-info">Most openly admitted to have never been taught nor witnessed what a healthy relationship looked like whilst growing up. As a result many have found themselves going from one relationship to the next which mirrored the same toxic traits and patterns.
                 <br><br>
                 “Teach me how to be happy” is a raw and enlightening journal which seeks to be an empowering resource; preventing the continuous manifestation of unhealthy relationships. Packed with practical techniques and encouraging affirmations;readers will be able to better identify, challenge and heal from unhealthy relationships. 
@@ -67,7 +69,7 @@
               <h2 class="quote">Normalising Healthy<br>Relationships</h2>
 
             </div>
-            <div class="rigt-col">
+            <div data-aos="fade-left" data-aos-duration="1000" class="rigt-col">
                 <div class="cult">
               <div id="" class="">
                 <h5 class="clut-header">Become a Subscriber</h5>
@@ -149,7 +151,7 @@
   </div>
    
 
-    <div id="about" class="about">
+    <div data-aos="fade-up" id="about" class="about">
       <div class="about-card">
             <div class="about-img">
               <div class="about-info">
@@ -245,7 +247,9 @@
       }
       initPayPalButton();
     </script>
-
+<script>
+  AOS.init();
+</script>
 
 
        
