@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.3.4",
     "live-server": "^1.2.1",
     "sass": "^1.44.0"
   },
@@ -20,6 +21,5 @@
     "url": "https://github.com/pa-may/tinapokauuah/issues"
   },
   "homepage": "https://github.com/pa-may/tinapokauuah#readme",
-  "devDependencies": {},
   "description": ""
 }
