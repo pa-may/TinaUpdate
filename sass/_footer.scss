@@ -3,7 +3,7 @@ footer {
   position: relative;
   bottom: 0;
   background-color: #21201e;
-  padding: 4rem 15rem;
+  padding: 4rem 35rem;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
@@ -60,7 +60,7 @@ footer .links ul li a:hover {
 }
 
 footer .footer-logo {
-  width: 23rem;
+  width: 15rem;
   align-self: center;
 }
 
@@ -70,8 +70,9 @@ footer .footer-logo {
 }
 
 .footer-socials i {
-  font-size: 4rem;
+  font-size: 3rem;
   color: rgb(65, 65, 65);
+  cursor: pointer;
 }
 .footer-socials i:hover {
   color: grey;
@@ -100,6 +101,6 @@ footer .footer-logo {
 }
 
 .copyright p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: grey;
 }
