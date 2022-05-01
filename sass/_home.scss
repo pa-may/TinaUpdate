@@ -1,7 +1,8 @@
 .landing {
   display: flex;
   width: 100%;
-  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   background-image: url(../img/bckg.svg);
   background-position: center;
   background-size: cover;
@@ -16,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 4rem 2rem;
-    height: fit-content;
+    // height: fit-content;
   }
 
   &__img {
@@ -26,11 +27,11 @@
     margin-right: 2rem;
     @media (max-width: 768px) {
       margin-right: 0rem;
-      padding-top: 8rem;
+      padding-top: 4rem;
     }
 
     @media (max-width: 375px) {
-      height: 40rem;
+      height: 35rem;
     }
   }
 
@@ -107,6 +108,7 @@
 .left-col,
 .right-col {
   width: 50%;
+  overflow: hidden;
   @media (max-width: 768px) {
     width: 100%;
     margin: 0rem 2rem;
@@ -219,6 +221,7 @@
   display: flex;
   padding: 4rem 15rem;
   justify-content: space-around;
+  overflow: hidden;
 
   @media (max-width: 1024px) {
     padding: 4rem 8rem;
@@ -443,7 +446,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-color: black;
+  background-color: #313838;
 
   @media (max-width: 900px) {
     padding: 1rem 1rem;

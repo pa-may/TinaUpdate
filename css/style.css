@@ -49,15 +49,32 @@ section {
     section {
       margin: 0 3rem; } }
 
+video {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: fit-content; }
+
+form {
+  width: 100%; }
+
 .cult {
   position: relative;
   width: 40rem;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
-  border: black solid 0.01rem;
-  height: 100%; }
+  border-radius: 0.2rem;
+  box-shadow: 0 0 22px 1px rgba(0, 0, 0, 0.589);
+  background-color: #313838;
+  background-image: url(../img/bckg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-blend-mode: overlay; }
   @media (max-width: 480px) {
     .cult {
       flex-direction: column;
@@ -67,24 +84,33 @@ section {
   margin: 0; }
 
 .clut-header {
-  font-size: 3rem;
-  text-align: center; }
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: whitesmoke; }
 
 .cult-title {
-  font-size: 2.3rem;
+  font-size: 2rem;
   text-align: center;
-  font-weight: 600; }
+  font-weight: 600;
+  color: whitesmoke; }
 
 .cult-access {
-  font-size: 1.6rem; }
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: floralwhite; }
 
 .email {
   position: relative;
   display: block;
   width: 100%;
-  border: black solid 0.01rem;
-  padding: 1rem;
-  margin: 0.5rem 0rem; }
+  background-color: whitesmoke;
+  border: #dddddd 0.1rem solid;
+  padding: 1.6rem;
+  margin: 1rem 0rem;
+  border-radius: 5rem;
+  font-size: 1.8rem; }
   @media (max-width: 480px) {
     .email {
       height: 5rem; } }
@@ -93,13 +119,17 @@ section {
   width: 100%;
   position: relative;
   display: block;
-  background-color: black;
-  padding: 1.5rem;
+  background-color: #181b1b;
+  padding: 1.6rem;
   color: white;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   cursor: pointer;
-  border-radius: 0.3rem; }
+  border-radius: 0.3rem;
+  border-radius: 5rem; }
+
+.button:hover {
+  background-color: #0e0f0f; }
 
 .sub-para {
   font-size: 2.2rem;
@@ -110,10 +140,14 @@ section {
 .indicates-required {
   position: relative;
   display: block;
-  color: gray;
+  color: white;
   font-weight: 400;
   text-align: center;
   font-size: 1.2rem; }
+
+.term {
+  text-decoration: underline;
+  color: #9ebbc3; }
 
 .swiper {
   width: 100%;
@@ -337,7 +371,7 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
-  background-color: #21201e;
+  background-color: #1c2020;
   padding: 4rem 35rem;
   display: flex;
   flex-direction: row-reverse;
@@ -404,7 +438,7 @@ footer .footer-logo {
 .copyright {
   padding: 0.5rem 2rem;
   width: 100%;
-  background-color: #272727; }
+  background-color: #313838; }
   @media (max-width: 1024px) {
     .copyright {
       padding: 1rem 15rem; } }
@@ -422,7 +456,8 @@ footer .footer-logo {
 .landing {
   display: flex;
   width: 100%;
-  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
   background-image: url(../img/bckg.svg);
   background-position: center;
   background-size: cover;
@@ -436,8 +471,7 @@ footer .footer-logo {
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      padding: 4rem 2rem;
-      height: fit-content; } }
+      padding: 4rem 2rem; } }
   .landing__img {
     height: 50rem;
     object-fit: contain;
@@ -446,10 +480,10 @@ footer .footer-logo {
     @media (max-width: 768px) {
       .landing__img {
         margin-right: 0rem;
-        padding-top: 8rem; } }
+        padding-top: 4rem; } }
     @media (max-width: 375px) {
       .landing__img {
-        height: 40rem; } }
+        height: 35rem; } }
   .landing__title {
     font-size: 4rem;
     font-family: 'Prata', serif;
@@ -499,7 +533,8 @@ footer .footer-logo {
 
 .left-col,
 .right-col {
-  width: 50%; }
+  width: 50%;
+  overflow: hidden; }
   @media (max-width: 768px) {
     .left-col,
     .right-col {
@@ -573,7 +608,8 @@ footer .footer-logo {
 .main-area {
   display: flex;
   padding: 4rem 15rem;
-  justify-content: space-around; }
+  justify-content: space-around;
+  overflow: hidden; }
   @media (max-width: 1024px) {
     .main-area {
       padding: 4rem 8rem; } }
@@ -761,7 +797,7 @@ footer .footer-logo {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  background-color: black; }
+  background-color: #313838; }
   @media (max-width: 900px) {
     .about-info {
       padding: 1rem 1rem; } }
@@ -810,7 +846,8 @@ nav {
   position: fixed;
   padding: 1.5rem 20rem;
   top: 0;
-  z-index: 9999; }
+  z-index: 9999;
+  box-shadow: 0 0px 15px -7px #7d7461; }
   @media (max-width: 900px) {
     nav {
       padding: 1.5rem 4rem; } }
