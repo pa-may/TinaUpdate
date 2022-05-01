@@ -11,6 +11,10 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1024px) {
+    padding-inline: 4rem;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
@@ -28,9 +32,6 @@
     @media (max-width: 768px) {
       margin-right: 0rem;
       padding-top: 4rem;
-    }
-
-    @media (max-width: 375px) {
       height: 35rem;
     }
   }
@@ -89,6 +90,60 @@
   }
 }
 
+.video-container {
+  display: flex;
+  padding: 0 4rem;
+  height: 30rem;
+  background-color: #efdbbd;
+  justify-content: space-evenly;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+video {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+iframe {
+  width: 45%;
+  background-color: #efdbbd;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.img2 {
+  width: 50%;
+  background-image: url(../img/IMG-20220501-WA0002.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 2rem;
+  background-position-y: -10rem;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0;
+    height: 36rem;
+  }
+  @media (max-width: 480px) {
+    height: 28rem;
+    background-position-y: -7rem;
+  }
+}
+
 .pay-p {
   display: flex;
   justify-content: flex-start;
@@ -97,13 +152,6 @@
     justify-content: center;
   }
 }
-
-// em {
-//   margin: 1rem 0;
-//   font-family: 'Poppins', sans-serif;
-//   font-weight: 300;
-//   font-size: 1.2rem;
-// }
 
 .left-col,
 .right-col {
@@ -119,34 +167,7 @@
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 100;
-  @media (max-width: 768px) {
-    // padding-top: 2rem;
-    // border-top: rgb(212, 212, 212) solid 0.01rem;
-  }
 }
-// .landing-img {
-//   // width: 50%;
-//   // height: 55vh;
-//   position: relative;
-//   background-image: url(../img/book-img.png);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: contain;
-
-//   @media (max-width: 1024px) {
-//     height: 45vh;
-//   }
-
-//   @media (max-width: 768px) {
-//     height: 60vh;
-//     width: 100%;
-//   }
-
-//   @media (max-width: 480px) {
-//     background-size: contain;
-//     height: 35vh;
-//   }
-// }
 
 .landing-info {
   text-align: left;
@@ -417,6 +438,7 @@
 .about-img {
   position: relative;
   width: 40%;
+  height: 35rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -432,10 +454,11 @@
 
   @media (max-width: 900px) {
     width: 100%;
+    height: 50rem;
   }
 
   @media (max-width: 480px) {
-    height: 60rem;
+    height: 40rem;
   }
 }
 
